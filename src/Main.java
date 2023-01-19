@@ -1,17 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        int y = 100;
-        int a = 1200;
-        int c = (a / 100);
-        if (a < 1000) {
-            int b = (y + a);
-            System.out.println(b);
+        int счет_клиента_начальный = 100;
+        int сумма_пополнения = 1200;
+        int бонус = (сумма_пополнения / 100);
+        if (сумма_пополнения < 1000) {
+            int счет_клиента_итоговый = (счет_клиента_начальный + сумма_пополнения);
+            System.out.println(счет_клиента_итоговый);
         }
-        if (a >= 1000) {
-            int b = (y + a + c);
-            
-            System.out.println(b);
-            System.out.println(c);
+        if (сумма_пополнения >= 1000) {
+            int счет_клиента_итоговый = (счет_клиента_начальный + сумма_пополнения + бонус);
+
+            System.out.println(счет_клиента_итоговый);
+            System.out.println(бонус);
         }
 
 
